@@ -21,7 +21,7 @@
 	
 	<!-- main stylesheets -->
 	<link rel="stylesheet" href="http://manuelmorales.mx/wp-content/themes/equilibrium/style.css" />
-	<link rel="stylesheet" href="http://manuelmorales.mx/wp-content/themes/equilibrium/styles/custom.php?ver=1542752228" />	
+	<link rel="stylesheet" href="http://manuelmorales.mx/wp-content/themes/equilibrium/styles/custom.php?ver=1543516872" />	
 	
 	<!-- print stylesheet -->
 	<link rel="stylesheet" href="http://manuelmorales.mx/wp-content/themes/equilibrium/styles/print.css" media="print" />
@@ -128,15 +128,12 @@ img.emoji {
 			
 		<section>
 			<div class="two_third">
-<form id="5bf487e5477e7contact-form" class="contact-form" action="http://manuelmorales.mx/index.php" method="post">
-<fieldset><label for="5bf487e5477e7name">Name: *</label><input type="text" id="5bf487e5477e7name" name="name" value="" /></fieldset>
-<fieldset><label for="5bf487e5477e7email">Email: *</label><input type="text" id="5bf487e5477e7email" name="email" value="" /></fieldset>
-<fieldset><label for="5bf487e5477e7message">Message: *</label><textarea id="5bf487e5477e7message" name="message" cols="300" rows="12"></textarea></fieldset>
-<fieldset><input type="submit" id="5bf487e5477e7submit-mail" name="submitmail" value="Send Message" /><img id="5bf487e5477e7loading" class="invisible loading-img" src="http://manuelmorales.mx/wp-content/themes/equilibrium/images/layout/loading.gif" alt="Loading..." /></fieldset>
-<p><input type="hidden" id="5bf487e5477e7myemail" name="myemail" value="administracion@manuelmorales.test" /><input type="hidden" id="5bf487e5477e7subject" name="subject" value="Contact Form Email" /><input type="hidden" id="5bf487e5477e7success" name="success" value="Thank you for your message. You will get an answer as soon as possible." /><input type="hidden" id="5bf487e5477e7failure" name="failure" value="There has been a mistake while sending the message. Please try again." /><input type="hidden" id="5bf487e5477e7invalid" name="invalid" value="Please enter a valid email address (youremail@yourdomain.com)." /><input type="hidden" id="5bf487e5477e7incomplete" name="incomplete" value="Please make sure all fields are filled out correctly." /></p>
-<p id="5bf487e5477e7form-status" class="form-status"><span class="status-icon"></span><span id="5bf487e5477e7status-message"></span></p>
-</form>
-<p><script>/* <![CDATA[ */ jQuery(function() { var sendButton = jQuery("#" + "5bf487e5477e7" + "submit-mail"); var formStatus = jQuery("#" + "5bf487e5477e7" + "form-status"); var statusMessage = jQuery("#" + "5bf487e5477e7" + "status-message"); var form = jQuery("#" + "5bf487e5477e7" + "contact-form"); var loading = jQuery("#" + "5bf487e5477e7" + "loading"); sendButton.click(function(event) { event.preventDefault(); jQuery.ajax({ url : "http://manuelmorales.mx/wp-content/themes/equilibrium" + "/function-includes/theme-shortcodes/contact-form-shortcode/ajax.php", dataType: "json", type: "POST", data: "name=" + jQuery("#" + "5bf487e5477e7" + "name").val() + "\u0026email=" + jQuery("#" + "5bf487e5477e7" + "email").val() + "\u0026message=" + jQuery("#" + "5bf487e5477e7" + "message").val() + "\u0026myemail=" + jQuery("#" + "5bf487e5477e7" + "myemail").val() + "\u0026success=" + jQuery("#" + "5bf487e5477e7" + "success").val() + "\u0026failure=" + jQuery("#" + "5bf487e5477e7" + "failure").val() + "\u0026invalid=" + jQuery("#" + "5bf487e5477e7" + "invalid").val() + "\u0026incomplete=" + jQuery("#" + "5bf487e5477e7" + "incomplete").val() + "\u0026subject=" + jQuery("#" + "5bf487e5477e7" + "subject").val(), beforeSend: function() { sendButton.disabled = true;loading.css("visibility", "visible");}, success: function(response) { sendButton.disabled = false; loading.css("visibility", "hidden"); if(response.type === "success") { statusMessage.text(response.message); if(formStatus.hasClass("error")) { formStatus.removeClass("error"); } formStatus.addClass("success").css("display", "block"); } else { statusMessage.text(response.message); if(formStatus.hasClass("success")) { formStatus.removeClass("success"); } formStatus.addClass("error").css("display", "block"); } } }); }); }); /* ]]&gt; */ </script>
+<!-- START .map-container --></p>
+<div class="map-container">
+<div id="map5c0032ca64dbf" class="gmap" style="width: 100%px; height: 300px"></div>
+</div>
+<p><!-- END .map-container --><script>jQuery(window).ready(function() { jQuery("#map5c0032ca64dbf").gMap({ 
+	zoom: 15, markers: [{latitude: 20.63272, longitude: -105.222707, title: "Mi Oficina"}]});}); </script>
 </div>
 <div class="one_third last">
 <!-- START .contact-info-shortcode --></p>
@@ -145,13 +142,7 @@ img.emoji {
 <li class="contact-info telephone">52 (322) 29 3 33 50 / 29 3 01 02</li>
 <li class="contact-info my-mail">manuel@manuelmorales.test</li>
 </ul>
-<p><!-- END .contact-info-shortcode --><br />
-<!-- START .map-container --></p>
-<div class="map-container">
-<div id="map5bf487e547a0c" class="gmap" style="width: 300px; height: 300px"></div>
-</div>
-<p><!-- END .map-container --><script>jQuery(window).ready(function() { jQuery("#map5bf487e547a0c").gMap({ 
-	zoom: 15, markers: [{latitude: 20.63272, longitude: -105.222707, title: "Mi Oficina"}]});}); </script>
+<p><!-- END .contact-info-shortcode -->
 </div>
 <div class="clearboth"></div>
 		</section>
@@ -162,7 +153,7 @@ img.emoji {
 	
 		
 	<!-- START #footer -->
-	<footer id="footer" class="grid_12 group ">
+	<footer id="footer" class="grid_12 group">
 		
 					
 			<!-- START .footer-widgets -->
