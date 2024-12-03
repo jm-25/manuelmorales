@@ -147,7 +147,7 @@
 	body { overflow-y: hidden; margin-top: 7px; padding-bottom: 300px; }
 	body:before { content: " "; display: block; position: absolute; z-index: 100; width: 100%; left: 0; top: 0; height: 7px; background: #444652; } /* top border */
 	#main-wrapper { padding: 50px 50px 30px; } 
-	.boxshadow #main-wrapper { -webkit-box-shadow: 0 10px 80px 0 rgba(0, 0, 0, 0.15); -moz-box-shadow: 0 10px 80px 0 rgba(0, 0, 0, 0.15); box-shadow: 0 10px 80px 0 rgba(0, 0, 0, 0.15); }
+	#main-wrapper { -webkit-box-shadow: 0 10px 80px 0 rgba(0, 0, 0, 0.15); -moz-box-shadow: 0 10px 80px 0 rgba(0, 0, 0, 0.15); box-shadow: 0 10px 80px 0 rgba(0, 0, 0, 0.15); }
 	#main-wrapper { background: #fff; background: rgba(255, 255, 255, 0.85); margin-bottom: 40px; }
 	.borderradius #main-wrapper { -moz-border-radius: 2px; -webkit-border-radius: 2px; border-radius: 2px; }
 	#secondary-wrapper { padding: 40px 0 20px; }
